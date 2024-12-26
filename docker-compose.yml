@@ -4,7 +4,6 @@ services:
   nginx:
     image: nginx:latest
     container_name: nginx-proxy
-    network_mode: "host"  # Use host networking 
     ports:
       - "80:80" # Expose port 80 for HTTP
     volumes:
