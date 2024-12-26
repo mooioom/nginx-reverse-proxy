@@ -9,8 +9,8 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     networks:
-      - chords-finder_app-network
+      - chords-finder_default
 
 networks:
-  chords-finder_app-network:
+  chords-finder_default:
     external: true
