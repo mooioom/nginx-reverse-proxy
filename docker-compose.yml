@@ -1,5 +1,9 @@
 version: '3.8'
 
+networks:
+  chords-finder_default:
+    external: true # Indicates the network already exists
+    
 services:
   nginx:
     image: nginx:latest
