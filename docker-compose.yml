@@ -8,9 +8,4 @@ services:
       - "80:80" # Expose port 80 for HTTP
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-    networks:
-      - f0463eba59a3530478733ce1a676f9ed72c293d64586961bd6bbed02ef875f93
-    
-networks:
-  f0463eba59a3530478733ce1a676f9ed72c293d64586961bd6bbed02ef875f93:
-    driver: bridge 
+      
